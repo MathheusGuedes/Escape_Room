@@ -14,10 +14,19 @@ public class GameManager : MonoBehaviour
     private GameObject pnlGameOver;
     [SerializeField]
     private GameObject pnlMenu;
+    [SerializeField]
+    public int points;
+    [SerializeField]
+    public Camera mainCamera;
+    [SerializeField]
+    public Camera uiCamera;
+
+    
+    public bool loss = false;
 
     void Start()
     {
-        
+        points = 0;
     }
 
     
@@ -26,9 +35,6 @@ public class GameManager : MonoBehaviour
         Timer();
         Menu();
 
-        
-
-        
     }
 
     void Timer(){
