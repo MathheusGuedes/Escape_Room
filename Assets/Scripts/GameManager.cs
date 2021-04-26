@@ -17,10 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public int points;
     [SerializeField]
-    public Camera mainCamera;
-    [SerializeField]
-    public Camera uiCamera;
-
+    public Image[] key;
     
     public bool loss = false;
 
@@ -34,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         Timer();
         Menu();
+        HudKey();
 
     }
 
@@ -77,10 +75,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void Continue(){
-
-    }
-
     void Menu(){
         if (Input.GetKeyDown("escape")){
             if(Time.timeScale == 0f){
@@ -91,6 +85,18 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0f;
                 pnlMenu.SetActive(true);
             }
+        }
+    }
+
+    
+    public void ClosePuzzle(GameObject puzzle){
+        puzzle.SetActive(false);
+    }
+
+    public void HudKey(){
+        if(points > 0 )
+        {
+            key[points-1].enabled = true;
         }
     }
 }

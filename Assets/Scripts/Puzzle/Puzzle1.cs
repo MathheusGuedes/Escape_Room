@@ -30,21 +30,24 @@ public class Puzzle1 : MonoBehaviour
 
     public void Win()
     {
-        
         if(valueWin >= 6 && !addPoint){
             win = true;
             foreach (Button item in btns)
             {
-                ColorBlock colors = item.colors;
+                item.interactable  = false;
+                /* ColorBlock colors = item.colors;
 
                 colors.normalColor = Color.green;
-                item.colors = colors;
-
-                item.interactable  = false;
+                item.colors = colors;*/
             }
-            if(win)
+
+
+            addPoint = true;
+            if(addPoint)
             {
                 _gameManager.points++;
+                addPoint = false;
+                valueWin = 0;
             }
         }
         
@@ -60,7 +63,7 @@ public class Puzzle1 : MonoBehaviour
             tryValue = 0;
             valueWin = 0;
             valueAux = 0;
-            _gameManager.loss = true;
+            _gameManager.loss = true; //enviar loss true para o ShakeMe (fazer o botao balançar)
         }
         
     }
@@ -68,12 +71,10 @@ public class Puzzle1 : MonoBehaviour
     public void ButtonPuzzle(int value){
         btns[value-1].interactable = false;
         tryValue++;
-        if(value > valueAux && valueWin != 6)
-        {
-            valueWin++;
-        }
-        valueAux = value;
+        if(value > valueAux && valueWin != 6) valueWin++;
 
+        valueAux = value;
     }
+
 
 }
