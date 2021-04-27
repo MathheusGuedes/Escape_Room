@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Colliders : MonoBehaviour
@@ -25,8 +24,19 @@ public class Colliders : MonoBehaviour
     {
         if(other.gameObject.tag == "Puzzle1" )
         {
-            if(Input.GetKeyDown("e"))
+            
+            if(Input.GetKey(KeyCode.E))
             puzzle1.SetActive(true);
+        }
+        if(other.gameObject.tag == "Puzzle2" )
+        {
+            if(Input.GetKey(KeyCode.E))
+            puzzle2.SetActive(true);
+        }
+        if(other.gameObject.tag == "Puzzle3" )
+        {
+            if(Input.GetKey(KeyCode.E))
+            puzzle3.SetActive(true);
         }
     }
 
@@ -35,5 +45,14 @@ public class Colliders : MonoBehaviour
         {
             puzzle1.SetActive(false);
         }
+        if(other.gameObject.tag == "Puzzle2")
+        {
+            puzzle2.SetActive(false);
+        }
+        if(other.gameObject.tag == "Puzzle3")
+        {
+            puzzle3.SetActive(false);
+        }
+
     }
 }

@@ -7,6 +7,9 @@ TagManager:
   - Puzzle1
   - Puzzle2
   - Puzzle3
+  - Jewel1
+  - Jewel2
+  - Jewel3
   layers:
   - Default
   - TransparentFX

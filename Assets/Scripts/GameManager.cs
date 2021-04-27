@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -15,15 +13,20 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject pnlMenu;
     [SerializeField]
-    public int points;
+    public int pointsPuzzle1, pointsPuzzle2, pointsPuzzle3;
     [SerializeField]
     public Image[] key;
+
+    public int points;
     
     public bool loss = false;
 
     void Start()
     {
         points = 0;
+        pointsPuzzle1 = 0;
+        pointsPuzzle2 = 0;
+        pointsPuzzle3 = 0;
     }
 
     
@@ -32,7 +35,6 @@ public class GameManager : MonoBehaviour
         Timer();
         Menu();
         HudKey();
-
     }
 
     void Timer(){
@@ -75,6 +77,10 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void AddPoint(){
+        points++;
+    }    
+
     void Menu(){
         if (Input.GetKeyDown("escape")){
             if(Time.timeScale == 0f){
@@ -88,12 +94,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
     public void ClosePuzzle(GameObject puzzle){
         puzzle.SetActive(false);
     }
 
     public void HudKey(){
+        
         if(points > 0 )
         {
             key[points-1].enabled = true;

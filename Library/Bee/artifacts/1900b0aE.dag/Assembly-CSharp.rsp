@@ -331,6 +331,8 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Player/Colliders.cs"
 "Assets/Scripts/Player/Move.cs"
+"Assets/Scripts/Puzzle/DragDrop.cs"
+"Assets/Scripts/Puzzle/ItemSlot.cs"
 "Assets/Scripts/Puzzle/Puzzle1.cs"
 "Assets/Scripts/Puzzle/ShakeMe.cs"
 -langversion:8.0

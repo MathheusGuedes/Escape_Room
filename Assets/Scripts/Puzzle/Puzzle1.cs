@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,7 +44,7 @@ public class Puzzle1 : MonoBehaviour
             addPoint = true;
             if(addPoint)
             {
-                _gameManager.points++;
+                _gameManager.AddPoint();
                 addPoint = false;
                 valueWin = 0;
             }
