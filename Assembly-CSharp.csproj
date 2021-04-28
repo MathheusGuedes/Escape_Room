@@ -38,11 +38,14 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Puzzle\ShakeMe.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Puzzle\RayCast.cs" />
      <Compile Include="Assets\Scripts\Puzzle\DragDrop.cs" />
      <Compile Include="Assets\Scripts\Player\Colliders.cs" />
      <Compile Include="Assets\Scripts\Puzzle\Puzzle1.cs" />
+     <Compile Include="Assets\Scripts\Puzzle\Puzzle3.cs" />
      <Compile Include="Assets\Scripts\Puzzle\ItemSlot.cs" />
      <Compile Include="Assets\Scripts\Player\Move.cs" />
+     <Compile Include="Assets\Scripts\StartGame.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

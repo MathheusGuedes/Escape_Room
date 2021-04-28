@@ -20,14 +20,12 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
@@ -35,8 +33,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        originalPos = transform.position;
-        
+        originalPos = transform.position; 
     }
 
     public void OnPointerDown(PointerEventData eventData)

@@ -10,6 +10,7 @@ TagManager:
   - Jewel1
   - Jewel2
   - Jewel3
+  - PicFrag
   layers:
   - Default
   - TransparentFX

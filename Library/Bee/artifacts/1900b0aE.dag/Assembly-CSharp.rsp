@@ -334,7 +334,10 @@
 "Assets/Scripts/Puzzle/DragDrop.cs"
 "Assets/Scripts/Puzzle/ItemSlot.cs"
 "Assets/Scripts/Puzzle/Puzzle1.cs"
+"Assets/Scripts/Puzzle/Puzzle3.cs"
+"Assets/Scripts/Puzzle/RayCast.cs"
 "Assets/Scripts/Puzzle/ShakeMe.cs"
+"Assets/Scripts/StartGame.cs"
 -langversion:8.0
 
 /deterministic

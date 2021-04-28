@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637549769900000000
-    m_Hash: 1681445069
+      ticks: 637550851220685971
+    m_Hash: 678996183
   m_LockFileStatus:
     m_FilePath: C:/Users/Matheus/Documents/GitHub/Escape_Room/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637549769900000000
-    m_Hash: 2224446282
+      ticks: 637550851220685971
+    m_Hash: 1750680488
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
