@@ -10,7 +10,7 @@ public class Puzzle3 : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Quaternion quat;
     [SerializeField] private float eulerAngZ;
     [SerializeField] public bool addPoints = true;
-    [SerializeField] private GameManager _gameManager; 
+    [SerializeField] private GameManager _gameManager;
 
 
     void Awake()
@@ -36,8 +36,15 @@ public class Puzzle3 : MonoBehaviour, IPointerClickHandler
     {
         if(transform.localEulerAngles.z == 0)
         { 
-            if(addPoints) _gameManager.pointsPuzzle3++;
-            if(_gameManager.pointsPuzzle3 >= 9 && addPoints) _gameManager.AddPoint();
+            if(addPoints)
+            {
+                _gameManager.pointsPuzzle3++;
+            } 
+            if(_gameManager.pointsPuzzle3 >= 9 && _gameManager.keyP3)
+            {
+                _gameManager.AddPoint();
+                _gameManager.keyP3 = false;
+            }
             addPoints = false;
         }
         else if (_gameManager.pointsPuzzle3 != 0 && !addPoints){
