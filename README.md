@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/-CSharp-239120?style=flat-square&logo=c-sharp&logoColor=white" />
 </p>
 
-## Indice :tw-1f4c3:
+## Indice
 - [Sobre o Jogo](#Sobre-o-Jogo)
 - [Contem](#Contem)
 - [Requisitos](#Requisitos)
