@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/-CSharp-239120?style=flat-square&logo=c-sharp&logoColor=white" />
 </p>
 
-## Indice
+## Indice :tw-1f4c3:
 - [Sobre o Jogo](#Sobre-o-Jogo)
 - [Contem](#Contem)
 - [Requisitos](#Requisitos)
@@ -13,7 +13,7 @@
 
 <br>
 
-## Sobre o Jogo
+## Sobre o Jogo :tw-1f3ae:
 
 Um jogo no estilo escape room em 3D que é focado em resolver quebra-cabeças com lógicas diferentes.
 Para iniciar um quebra-cabeça, o jogador deve interagir com os objetos na sala.
@@ -73,30 +73,35 @@ Ao iniciar o jogo o jogador se depara com uma breve explicação do que ele ter�
 ------------
 
 **O quebra-cabeça da caixa verde é uma espécie de senha que está escondida em um quadro**
+
 ![](https://media.giphy.com/media/K7EVkjpAakcpajmLwj/giphy.gif)
 
 ------------
 
 **Após descobrir a senha e inserir no quebra-cabeça através de botões numerados uma chave é adquirida**
+
 ![](https://media.giphy.com/media/Yoaa75gPzHec2fhNu8/giphy.gif)
 
 ------------
 
 **O quebra-cabeça da caixa vermelha contem diversas joias, mas apenas 3 delas se encaixam nos espaços vazios, após encaixar as 3 joias uma chave é adquirida**
+
 ![](https://media.giphy.com/media/LRxTxmi5kHcaXduHo9/giphy.gif)
 
 
 ------------
 
 **O quebra-cabeça da caixa azul é uma foto cortada em 9 pedaços, cada pedaço está rotacionado diferente, após rotacionar e formar a foto uma chave é adquirida**
+
 ![](https://media.giphy.com/media/vJUvMT85MWNbIFh0UD/giphy.gif)
 
 
 ------------
 
 **Após completar todos os quebra-cabeças e obter todas as chaves a porta se abre para e você consegue finalizar o jogo**
+
 ![](https://media.giphy.com/media/mvnubjB4kbQralho4E/giphy.gif)
 
 ------------
 
-**Este jogo foi projetado e desenvolvido por Matheus Guedes Ribeiro.**
+**Este jogo foi projetado e desenvolvido por Matheus Guedes Ribeiro.**:tw-1f604:
