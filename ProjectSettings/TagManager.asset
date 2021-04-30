@@ -12,6 +12,7 @@ TagManager:
   - Jewel3
   - PicFrag
   - Door
+  - Quadro
   layers:
   - Default
   - TransparentFX

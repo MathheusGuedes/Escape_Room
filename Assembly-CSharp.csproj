@@ -47,6 +47,7 @@
      <Compile Include="Assets\Scripts\Puzzle\ItemSlot.cs" />
      <Compile Include="Assets\Scripts\Player\Move.cs" />
      <Compile Include="Assets\Scripts\EndGame.cs" />
+     <Compile Include="Assets\PanelManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

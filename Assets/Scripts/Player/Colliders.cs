@@ -4,12 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class Colliders : MonoBehaviour
 {
-    public GameObject puzzle1, puzzle2, puzzle3, door, pnlEndDialog;
+    public GameObject puzzle1, puzzle2, puzzle3, door, pnlEndDialog, pnlQuadro;
     public GameManager _gameManager;
     public bool pressEVisible = false;
     public GameObject pressE;
+
+    public bool panelOn = false;
     void Start()
     {
+        panelOn = false;
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -20,6 +23,7 @@ public class Colliders : MonoBehaviour
             puzzle1.SetActive(false);
             puzzle2.SetActive(false);
             puzzle3.SetActive(false);
+            pnlQuadro.SetActive(false);
         }
 
         if(puzzle1.activeSelf || puzzle2.activeSelf || puzzle3.activeSelf)
@@ -38,6 +42,18 @@ public class Colliders : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if(other.gameObject.tag == "Quadro")
+        {
+            if(!pnlQuadro.activeSelf)
+            {
+                pressEVisible = true;
+            }            
+            if(Input.GetKey(KeyCode.E))
+            {   
+                pressEVisible = false;
+                pnlQuadro.SetActive(true);
+            }
+        }
         if(other.gameObject.tag == "Puzzle1")
         {
             pressEVisible = true;
@@ -70,9 +86,9 @@ public class Colliders : MonoBehaviour
         }
         if(other.gameObject.tag == "Door" )
         {   
+            pressEVisible = true;
             if(_gameManager.points != 3)
             {
-                pressEVisible = true;
                 if(Input.GetKey(KeyCode.E))
                 {
                     pressEVisible = false;
@@ -80,6 +96,7 @@ public class Colliders : MonoBehaviour
                 }
             }
             else if(_gameManager.points >= 3 && Input.GetKey(KeyCode.E)){
+                pressEVisible = false;
                 pnlEndDialog.SetActive(true);
             }
             else if(!pnlEndDialog.GetComponent<DialogManager>().inDialog)
@@ -90,6 +107,11 @@ public class Colliders : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other){
+        if(other.gameObject.tag == "Quadro")
+        {   
+            pressEVisible = false;
+            pnlQuadro.SetActive(false);
+        }
         if(other.gameObject.tag == "Puzzle1")
         {   
             pressEVisible = false;
