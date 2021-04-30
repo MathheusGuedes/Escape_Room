@@ -13,7 +13,7 @@
 
 <br>
 
-## Sobre o Jogo :tw-1f3ae:
+## Sobre o Jogo
 
 Um jogo no estilo escape room em 3D que é focado em resolver quebra-cabeças com lógicas diferentes.
 Para iniciar um quebra-cabeça, o jogador deve interagir com os objetos na sala.
@@ -49,7 +49,7 @@ Após baixar e descompactar abrir o arquivo `Escape_Room.exe`
 - Linguagem de programação C# [Não é compatível com JavaScript]
 <br>
 
-## Como baixar o projeto :tw-2b07:
+## Como baixar o projeto
 
 #### Usando Github Desktop
 Clone este repositório usando 
@@ -104,4 +104,4 @@ Ao iniciar o jogo o jogador se depara com uma breve explicação do que ele ter�
 
 ------------
 
-**Este jogo foi projetado e desenvolvido por Matheus Guedes Ribeiro.**:tw-1f604:
+**Este jogo foi projetado e desenvolvido por Matheus Guedes Ribeiro.**
