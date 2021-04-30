@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/-CSharp-239120?style=flat-square&logo=c-sharp&logoColor=white" />
 </p>
 
-## Indice :tw-1f4c3:
+## Indice
 - [Sobre o Jogo](#Sobre-o-Jogo)
 - [Contem](#Contem)
 - [Requisitos](#Requisitos)
@@ -13,7 +13,7 @@
 
 <br>
 
-## Sobre o Jogo :tw-1f3ae:
+## Sobre o Jogo
 
 Um jogo no estilo escape room em 3D que é focado em resolver quebra-cabeças com lógicas diferentes.
 Para iniciar um quebra-cabeça, o jogador deve interagir com os objetos na sala.
@@ -99,4 +99,4 @@ Ao iniciar o jogo o jogador se depara com uma breve explicação do que ele ter�
 
 ------------
 
-**Este jogo foi projetado e desenvolvido por Matheus Guedes Ribeiro.**:tw-1f604:
+**Este jogo foi projetado e desenvolvido por Matheus Guedes Ribeiro.**
